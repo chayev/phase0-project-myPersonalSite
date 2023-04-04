@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style.css" />
-        <title>My Personal Website</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Hello there! 👋🏼</p>
+        <p>
+          My name is <b>Michael Ibragimchayev</b>, and I'm a software
+          engineering student currently enrolled in the Flatiron Software
+          Engineering Bootcamp. I'm passionate about technology, marketing, and
+          entrepreneurship, and I have experience working in the tech industry.
+        </p>
+        <p>
+          I started my career at Datorama, where I worked before the company was
+          acquired by Salesforce in 2018. After that, I worked at AppsFlyer, a
+          mobile attribution and marketing analytics company headquartered in
+          Israel. Most recently, I worked at Google as a Technical Product
+          Expert.
+        </p>
+        <p>
+          In addition to my professional experience, I'm also working on several
+          personal projects, including yURL and BetterQuestions, which you can
+          learn more about below.
+        </p>
+        <p>
+          When I'm not busy with work or my projects, you can find me exploring
+          the city or learning new things. I'm always looking for opportunities
+          to expand my knowledge and meet new people.
+        </p>
+        <p>
+          If you'd like to connect, please feel free to contact me. I'm always
+          excited to chat with others who share my interests in technology and
+          entrepreneurship.
+        </p>
+      </section>
+      <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>GoLang</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h1>Projects</h1>
+        <ul>
+          <li>
+            <h2>yURL</h2>
+            <p>
+              yURL is a CLI (Command-Line Interface) and webapp that allows you
+              to validate the behavior of your URLs. It can be used to validate
+              Android App Links and Apple Universal Links.
+            </p>
+            <a href="http://yurl.chayev.com/">View Project</a>
+          </li>
+          <li>
+            <h2>Better Questions</h2>
+            <p>
+              BetterQuestions is a private project that I’m working on with my
+              friends. It currently uses Google Sheets as a database with the
+              React framework powering the frontend.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Michael Ibragimchayev</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

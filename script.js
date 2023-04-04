@@ -1,4 +1,17 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+// Smooth scrolling
+const navLinks = document.querySelectorAll('nav ul li a')
 
-document.querySelector("body").appendChild(h2);
+for (const link of navLinks) {
+  link.addEventListener('click', clickHandler)
+}
+
+function clickHandler(e) {
+  e.preventDefault()
+  const href = this.getAttribute('href')
+  const offsetTop = document.querySelector(href).offsetTop
+
+  scroll({
+    top: offsetTop,
+    behavior: 'smooth',
+  })
+}
